@@ -1,0 +1,163 @@
+:root {
+  --footer-height: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  height: calc(100vh - var(--footer-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  height: 675px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.image-blue {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.main-title__text {
+  font-weight: bold;
+  font-size: 30px;
+  color: hsl(223, 47%, 23%);
+  margin: 0;
+}
+
+.main-description {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-description__text {
+  font-size: 16px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  margin: 0;
+}
+
+.main-plan {
+  background-color: hsl(225, 100%, 98%);
+  width: 375px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-plan_logo {
+  margin-right: 20px;
+}
+
+.main-plan__text {
+  margin-right: 60px;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-plan__title {
+  color: hsl(223, 47%, 23%);
+  margin: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-plan__price {
+  color: hsl(224, 23%, 55%);
+  margin: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-plan_link {
+  display: flex;
+  flex-grow: 3;
+}
+
+.main-plan_link_url {
+  color: hsl(245, 75%, 52%);
+}
+
+.button-body {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 115px;
+  padding-right: 115px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 20px 15px hsl(225, 100%, 94%);
+}
+
+.main-cancel {
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+.cancel-link {
+  color: hsl(224, 23%, 55%);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer {
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-plan-link_url:hover {
+  color: hsl(250, 100%, 75%);
+  text-decoration: none;
+}
+
+.button-body:hover {
+  background-color: hsl(250, 100%, 75%);
+}
+
+.cancel-link:hover {
+  color: hsl(223, 47%, 23%);
+}
